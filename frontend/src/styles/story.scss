@@ -1,0 +1,60 @@
+.story{
+    height: 100vh;
+    background-color: #0e100f;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8rem;
+    .circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // filter: blur(5px);
+        .circle-area{
+            // filter: blur(10px);
+            width: 180px;
+        }
+    }
+
+    .header{
+        color: #ecedee;
+        width: 500px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .date{
+        // position: absolute;
+        color: #ecedee;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .content{
+        width: 500px;
+        // position: absolute;
+        color: #ecedee;
+        line-height: 1.5rem;
+        font-size: 19px;
+    }
+    .color{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 500px;
+        .square {
+          margin-right: 10px;
+          width: 16px;
+          height: 16px;
+          background-color: #f2d22e;
+        }
+    
+        .color-def {
+        //   margin-top: 10px;
+          color: #9ba1a6;
+          font-size: 14px;
+          text-align: left;
+        }
+         
+    }
+
+}

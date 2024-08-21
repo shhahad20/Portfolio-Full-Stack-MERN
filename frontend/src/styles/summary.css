@@ -1,0 +1,173 @@
+#summary {
+  margin: 2rem 0;
+  padding: 0;
+  background-image: radial-gradient(circle, #26292b 2%, transparent 5%), radial-gradient(circle, #26292b 2%, transparent 5%);
+  background-size: 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#summary #summary-container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+#summary #summary-container .between-lines {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 2rem;
+  color: rgba(186, 214, 247, 0.32);
+}
+
+#summary #summary-container .between-lines #summ-header {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d8ecf8), to(#98c0ef));
+  background: linear-gradient(0deg, #d8ecf8, #98c0ef);
+  background-clip: text;
+  color: transparent;
+  display: block;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+}
+
+#summary #summary-container .between-lines:before {
+  content: "";
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(216, 236, 248, 0)), to(rgba(184, 216, 254, 0.32)));
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+  width: 86px;
+}
+
+#summary #summary-container .between-lines:after {
+  content: "";
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(216, 236, 248, 0)), to(rgba(184, 216, 254, 0.32)));
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+  width: 86px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#summary #summary-container .sum-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+#summary #summary-container .sum-content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#summary #summary-container .sum-content img {
+  width: 40px;
+  padding: 5px;
+  background-color: #0b0d1f;
+  border: 1px solid #98c0ef;
+  border-radius: 8px;
+  color: #d8ecf8;
+}
+
+#summary #summary-container .sum-content h2 {
+  color: #d8ecf8;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#summary #summary-container .sum-content p {
+  color: #98c0ef;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  #summary #summary-container #summ-header {
+    font-size: 20px;
+    margin: 5rem 0;
+  }
+  #summary #summary-container .sum-content {
+    gap: 5rem;
+    margin: 3rem 0;
+  }
+  #summary #summary-container .container {
+    -ms-flex-preferred-size: 180px;
+        flex-basis: 180px;
+  }
+  #summary #summary-container img {
+    width: 30px;
+  }
+  #summary #summary-container h2 {
+    font-size: 16px;
+  }
+  #summary #summary-container p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #summ-header {
+    font-size: 16px;
+    margin: 1.5rem 0;
+  }
+  .sum-content {
+    gap: 2rem;
+    margin: 1.5rem 0;
+  }
+  .container {
+    -ms-flex-preferred-size: 120px;
+        flex-basis: 120px;
+  }
+  img {
+    width: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=summary.css.map */

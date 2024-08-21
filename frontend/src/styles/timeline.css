@@ -1,0 +1,193 @@
+.fade-in-container {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  --show-cursor: none;
+  cursor: none;
+}
+
+.fade-in-container ::-moz-selection {
+  background: yellow;
+  background-blend-mode: overlay;
+  color: #151718;
+}
+
+.fade-in-container ::selection {
+  background: yellow;
+  background-blend-mode: overlay;
+  color: #151718;
+}
+
+.fade-in-container:hover {
+  --show-cursor: block;
+}
+
+.fade-in-container::after {
+  --cursor-width: max( 5px, calc( 0 * .4) );
+  display: var(--show-cursor);
+  content: "";
+  pointer-events: none;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: calc( 20px / 2);
+  translate: -50% -50%;
+  position: absolute;
+  top: var(--mouse-y, 0);
+  left: var(--mouse-x, 0);
+  width: 20px;
+  height: 40px;
+  cursor: none;
+  -webkit-transition: height 0.3s cubic-bezier(0.095, 1.09, 0.605, 1.235), width 0.3s cubic-bezier(0.095, 1.09, 0.605, 1.235);
+  transition: height 0.3s cubic-bezier(0.095, 1.09, 0.605, 1.235), width 0.3s cubic-bezier(0.095, 1.09, 0.605, 1.235);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.between-lines {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(186, 214, 247, 0.32);
+}
+
+.between-lines .experience-header {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d8ecf8), to(#98c0ef));
+  background: linear-gradient(0deg, #d8ecf8, #98c0ef);
+  background-clip: text;
+  color: transparent;
+  display: block;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+}
+
+.between-lines:before {
+  content: "";
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(216, 236, 248, 0)), to(rgba(184, 216, 254, 0.32)));
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+  width: 86px;
+}
+
+.between-lines:after {
+  content: "";
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(216, 236, 248, 0)), to(rgba(184, 216, 254, 0.32)));
+  background: linear-gradient(90deg, rgba(216, 236, 248, 0), rgba(184, 216, 254, 0.32));
+  width: 86px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fade-in-item {
+  margin-bottom: 2rem;
+  width: 600px;
+  background-color: #0b0d1f;
+  border: 1px solid #98c0ef;
+  border-radius: 4px;
+  color: #d8ecf8;
+}
+
+.fade-in-item h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d8ecf8), to(#98c0ef));
+  background: linear-gradient(0deg, #d8ecf8, #98c0ef);
+  background-clip: text;
+  color: transparent;
+  display: block;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 16px rgba(174, 207, 242, 0.24);
+  text-align: left;
+}
+
+.fade-in-item .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #d8ecf8;
+  border: 1px solid #98c0ef;
+  padding: 0.2rem 1rem;
+}
+
+.fade-in-item .company span {
+  font-style: italic;
+}
+
+.fade-in-item p {
+  color: #d8ecf8;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+@media (max-width: 767px) {
+  .fade-in-container {
+    padding: 1rem;
+  }
+  .fade-in-container .fade-in-item {
+    width: 100%;
+  }
+  .fade-in-container .fade-in-item h2 {
+    font-size: 20px;
+  }
+  .fade-in-container .fade-in-item .company {
+    font-size: 14px;
+  }
+  .fade-in-container .fade-in-item p {
+    font-size: 14px;
+  }
+  .empty-div h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fade-in-container .fade-in-item {
+    width: 80%;
+  }
+  .empty-div h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fade-in-container .fade-in-item {
+    width: 600px;
+  }
+}
+/*# sourceMappingURL=timeline.css.map */

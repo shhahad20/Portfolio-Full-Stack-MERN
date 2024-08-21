@@ -1,0 +1,110 @@
+@import 'mixins';
+@import 'variables';
+
+.fade-in-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .between-lines{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(186, 214, 247, .32);
+    .experience-header{
+      @include header-style(15px);
+    }
+}
+.between-lines:before{
+  @include betweenLines;
+}
+.between-lines:after{
+  @include betweenLines;
+    transform: rotate(180deg);
+}
+  .fade-in-item {
+    margin-bottom: 2rem;
+    width: 600px;
+    background-color: $second-bg-color;
+    border: map-get($borders , 1 );
+    border-radius: 4px;
+    color: $primary-white-color;
+
+    h2{
+      @include header-style(24px);
+      text-align: left;
+    }
+    .company{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        color: $primary-white-color;
+        border: map-get($borders , 1 );
+        padding: 0.2rem 1rem;
+        span{
+            font-style: italic;
+        }
+    }
+    p{
+      color: $primary-white-color;
+      line-height: 1.5;
+        padding: 0 1rem;
+    }
+  }
+
+// For smaller screens (mobile)
+@media (max-width: 767px) {
+    .fade-in-container {
+      padding: 1rem;
+  
+      .fade-in-item {
+        width: 100%;
+  
+        h2 {
+          font-size: 20px;
+        }
+  
+        .company {
+          font-size: 14px;
+        }
+  
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .empty-div{
+        h1{
+            font-size: 3rem;
+        }
+      }
+  }
+// For medium screens (tablets)
+@media (min-width: 768px) and (max-width: 1023px) {
+    .fade-in-container {
+      .fade-in-item {
+        width: 80%;
+      }
+    }
+    .empty-div{
+        h1{
+            font-size: 5rem;
+        }
+      }
+  }
+  
+  // For larger screens (desktops)
+  @media (min-width: 1024px) {
+    .fade-in-container {
+      .fade-in-item {
+        width: 600px;
+      }
+    }
+  }

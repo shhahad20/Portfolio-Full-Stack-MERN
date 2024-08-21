@@ -1,0 +1,165 @@
+#skills {
+  padding: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #skills_container {
+  width: 1300px;
+  height: 450px;
+  border: 1px solid #4c5155;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #skills_container .skill1, #skills #skills_container .skill2 {
+  border-right: 1px solid #4c5155;
+  height: 100%;
+  width: 433px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #skills_container .skill3 {
+  height: 100%;
+  width: 433px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #skills_container .skill1, #skills #skills_container .skill2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skills #skills_container .skill1 .content_container .shape2_container, #skills #skills_container .skill2 .content_container .shape2_container {
+  background-color: aqua;
+  width: 300px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+#skills #skills_container .skill1 .content_container h1, #skills #skills_container .skill2 .content_container h1 {
+  color: #ecedee;
+  font-size: 25px;
+  font-weight: 500;
+  width: 300px;
+}
+
+#skills #skills_container .skill1 .content_container p, #skills #skills_container .skill2 .content_container p {
+  color: #9ba1a6;
+  font-size: 14px;
+  font-weight: 500;
+  width: 300px;
+}
+
+#skills #skills_container .skill1 .content_container .details, #skills #skills_container .skill2 .content_container .details {
+  display: none;
+  opacity: 0;
+}
+
+#skills #skills_container .skill1:hover, #skills #skills_container .skill2:hover {
+  background-color: #26292b;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+#skills #skills_container .skill1:hover .details, #skills #skills_container .skill2:hover .details {
+  display: block;
+  opacity: 1;
+  line-height: 1.5;
+}
+
+#skills #skills_container .skill1:hover .shape1_container, #skills #skills_container .skill1:hover .shape2_container, #skills #skills_container .skill1:hover .p, #skills #skills_container .skill2:hover .shape1_container, #skills #skills_container .skill2:hover .shape2_container, #skills #skills_container .skill2:hover .p {
+  display: none;
+}
+
+#skills #skills_container .skill3 .content_container .shape3_container {
+  background-color: aqua;
+  padding: 1rem;
+}
+
+#skills #skills_container .skill3 .content_container img {
+  width: 50%;
+}
+
+#skills #skills_container .skill3 .content_container h1 {
+  color: #ecedee;
+  font-size: 25px;
+  font-weight: 500;
+  width: 300px;
+}
+
+#skills #skills_container .skill3 .content_container p {
+  color: #9ba1a6;
+  font-size: 14px;
+  font-weight: 500;
+  width: 300px;
+}
+
+#skills #skills_container .skill3 .content_container .details {
+  display: none;
+  opacity: 0;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+#skills #skills_container .skill3:hover {
+  background-color: #26292b;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+#skills #skills_container .skill3:hover .details {
+  display: block;
+  opacity: 1;
+  line-height: 1.5;
+}
+
+#skills #skills_container .skill3:hover .shape3_container, #skills #skills_container .skill3:hover .p {
+  display: none;
+}
+/*# sourceMappingURL=skills.css.map */

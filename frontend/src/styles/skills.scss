@@ -1,0 +1,144 @@
+#skills{
+    // background-color: aliceblue;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #skills_container{
+        // width: 50%;
+        width: 1300px;
+        height: 450px;
+        border: 1px solid #4c5155;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .skill1, .skill2{
+            // background-color: aquamarine;
+            border-right:1px solid #4c5155 ;
+            height: 100%;
+            width: 433px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .skill3{
+            // background-color: rgb(255, 251, 127);
+            // border-right:1px solid #4c5155 ;
+            height: 100%;
+            width: 433px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .skill1, .skill2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content_container{
+                .shape1_container{
+                    // background-color: aqua;
+                    // padding: 1rem 1rem 0 1rem;
+                    // width: 300px;
+                    // height: 180px;
+                    // display: flex;
+                    // justify-content: left;
+                    // align-items: left;
+                }
+                .shape2_container{
+                    background-color: aqua;
+                    width: 300px;
+                    height: 180px;
+                    display: flex;
+                    justify-content: left;
+                    align-items: left;
+                    // padding: 1rem;
+                }
+                // img{
+                //     width: 45%;
+                //     background-color: antiquewhite;
+                // }
+                h1{
+                    color: #ecedee;
+                    font-size: 25px;
+                    font-weight: 500;
+                    width: 300px;
+                }
+                p{
+                    color: #9ba1a6;
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 300px;
+                }
+                .details {
+                    display: none;
+                    opacity: 0;
+                    // transition: opacity 0.3s;
+                  }
+            }
+            &:hover{
+                background-color: #26292b;
+                transition: background 0.4s ease;
+                .details {
+                    display: block;
+                    opacity: 1;
+                    line-height: 1.5;
+
+                  }
+                .shape1_container,.shape2_container, .p{
+                    display: none;
+                }
+            }
+        }
+        .skill3{
+            .content_container{
+                .shape3_container{
+                    background-color: aqua;
+                    padding: 1rem;
+                }
+                img{
+                    width: 50%;
+                }
+                h1{
+                    color: #ecedee;
+                    font-size: 25px;
+                    font-weight: 500;
+                    width: 300px;
+
+                }
+                p{
+                    color: #9ba1a6;
+                    font-size: 14px;
+                    font-weight: 500; 
+                    width: 300px;
+
+                }
+                .details {
+                    display: none;
+                    opacity: 0;
+                    // transition: opacity 0.3s;
+                    transition: background 0.4s ease;
+                  }
+            }
+            &:hover{
+                background-color: #26292b;
+                transition: background 0.4s ease;
+                .details {
+                    display: block;
+                    opacity: 1;
+                    line-height: 1.5;
+                  }
+                .shape3_container, .p{
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+   
+}
+
+  
+  
+

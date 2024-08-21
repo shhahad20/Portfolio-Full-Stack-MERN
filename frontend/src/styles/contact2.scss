@@ -1,0 +1,177 @@
+@import 'mixins';
+@import 'variables';
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden; 
+    cursor: default;
+.contact-lines-background, .contact-lines-background-ver{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact-lines-background .contact-line {
+    width: 100%;
+    height: 1px; 
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    position: absolute;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 10vh;
+      height: 100%;
+      top: 0;
+      }
+  }
+  .contact-lines-background .contact-line:nth-child(1) {
+    top: 20%;
+  }
+  .contact-lines-background .contact-line:nth-child(2) {
+    top: 30%;
+  }
+  .contact-lines-background .contact-line:nth-child(3) {
+    top: 80%;
+  }
+  .contact-lines-background .contact-line:nth-child(4) {
+    top: 90%;
+  }
+  .contact-lines-background-ver {
+    flex-direction: column;
+  }
+  .contact-lines-background-ver .contact-line {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    position: absolute;
+    &::after{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 10vh;
+      width: 100%;
+      left: 0;
+      }
+  }
+  .contact-lines-background-ver .contact-line:nth-child(1) {
+    left: 30%;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(2) {
+    left: 35%;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(3) {
+    left: 65%;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(4) {
+    left: 70%;
+  }
+  }
+
+.contact-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .between-lines{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(186, 214, 247, .32);
+    .contact-header{
+      @include header-style(15px);
+    }
+}
+.between-lines:before{
+  @include betweenLines;
+}
+.between-lines:after{
+  @include betweenLines;
+    transform: rotate(180deg);
+}
+
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    .icon-div{
+        width: 35px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-div:nth-child(1){
+        width: 35px;
+        background-color:$second-bg-color;
+        padding: 8px 10px;
+        border: map-get($borders, 2);
+        border-radius: 8px;
+        box-shadow: 0 1px 10px rgba(174, 207, 242, .24);
+    }
+
+}
+@media (max-width: 1098px){
+  .contact-lines-background-ver .contact-line:nth-child(1) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(2) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(3) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .contact-lines-background-ver .contact-line:nth-child(1) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(2) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(3) {
+    display: none;
+  }
+  .contact-lines-background-ver .contact-line:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .contact-lines-background .contact-line:nth-child(1) {
+       display: none;
+  }
+  .contact-lines-background .contact-line:nth-child(2) {
+       display: none;
+  }
+  .contact-lines-background .contact-line:nth-child(3) {
+       display: none;
+  }
+  .contact-lines-background .contact-line:nth-child(4) {
+        display: none;
+  }
+  .contact {
+    height: 30vh; 
+  }
+}
